@@ -2,17 +2,15 @@
 <head>
 <title>TIG City Notificatons</title>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
-<script type="text/javascript" data-cfasync="false">
- var _foxpush = _foxpush || [];
- _foxpush.push(['_setDomain', 'pushtigcitytk']);
- (function(){
-     var foxscript = document.createElement('script');
-     foxscript.src = '//cdn.foxpush.net/sdk/foxpush_SDK_min.js';
-     foxscript.type = 'text/javascript';
-     foxscript.async = 'true';
-     var fox_s = document.getElementsByTagName('script')[0];
-     fox_s.parentNode.insertBefore(foxscript, fox_s);})();
- </script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "ffe54bd4-c571-4ad6-8048-ece66f19b050",
+    });
+  });
+</script>
 </head>
 
 <body>
